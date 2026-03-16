@@ -8,13 +8,18 @@
   },
   "dependencies": {
     "axios": "^1.13.6",
-    "canvas": "^2.11.2",
+    "@napi-rs/canvas": "^0.1.53",
     "cheerio": "^1.2.0",
     "dotenv": "^16.6.1",
     "exceljs": "^4.4.0",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^3.11.174",
     "telegraf": "^4.16.3"
+  },
+  "browser": {},
+  "imports": {},
+  "overrides": {
+    "canvas": "npm:@napi-rs/canvas"
   },
   "devDependencies": {
     "nodemon": "^3.0.0"

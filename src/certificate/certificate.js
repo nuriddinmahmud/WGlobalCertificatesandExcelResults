@@ -1,6 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-const { createCanvas } = require("canvas");
+const { createCanvas, loadImage } = require('@napi-rs/canvas')
 const fs = require("fs");
 const path = require("path");
 const { PDFDocument } = require("pdf-lib");
