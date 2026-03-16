@@ -269,14 +269,14 @@ certBot.action(/^country_(\d+)$/, async (ctx) => {
 
       await ctx.replyWithDocument(
         { source: result.path, filename: `${result.authorName}.pdf` },
-        { caption: `👤 ${author}\n🔗 ${url}` }
+        { caption: `${url}` }
       );
 
       try {
         await ctx.telegram.sendDocument(
           CHANNEL,
           { source: result.path, filename: `${result.authorName}.pdf` },
-          { caption: `👤 ${author}\n🔗 ${url}` }
+          { caption: `${url}` }
         );
       } catch (err) {
         console.error("Kanalga yuborishda xato:", err.message);

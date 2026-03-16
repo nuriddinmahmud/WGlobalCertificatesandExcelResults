@@ -6,7 +6,7 @@ const path = require("path");
 const { PDFDocument } = require("pdf-lib");
 const pdfjsLib = require("pdfjs-dist/legacy/build/pdf.js");
 
-const TEMPLATES_DIR = path.join(__dirname, "../../templates");
+const TEMPLATES_DIR = path.join(__dirname, "../..");
 const TEMP_DIR = path.join(__dirname, "../../temp");
 if (!fs.existsSync(TEMP_DIR)) fs.mkdirSync(TEMP_DIR, { recursive: true });
 
